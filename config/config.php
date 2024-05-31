@@ -1,23 +1,31 @@
 <?php
 
-// HOST
-define("HOST", "localhost");
+try {
 
-// DBBNAME
-define("DBNAME", "ecommerce");
+    // HOST
+    define("HOST", "localhost");
 
-// USER
-define("USER", "adsi");
+    // DBBNAME
+    define("DBNAME", "ecommerce");
 
-// PASS
-define("PASS", "utilizar");
+    // USER
+    define("USER", "adsi");
 
-$conn = new PDO("mysql:host=".HOST.";dbname=".DBNAME.";user=".USER.";password=".PASS); 
+    // PASS
+    define("PASS", "utilizar");
 
+    $conn = new PDO("mysql:host=".HOST.";dbname=".DBNAME.";", USER, PASS);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+    /* if($conn == true) {
+        echo "conexion exitosa!";
+    } else {
+        echo "error";
+    } */
 
+    echo "llllllllllll";
 
-
-
-
-
+} catch(PDOException $e) {
+    echo $e->getMessage();
+    /* die("Ohh no! A ocurrido un error en la conexión."); */
+}
