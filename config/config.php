@@ -1,5 +1,13 @@
 <?php
 
+if(!isset($_SERVER['HTTP_REFERER'])) {
+    // Vamos a redirigir a la ubicacion deseada
+    // header('location: ../index.php');
+    header('location: http://localhost/ecommerce/index.php');
+    exit;
+}
+
+
 try {
 
     // HOST
@@ -23,7 +31,7 @@ try {
         echo "error";
     } */
 
-    echo "llllllllllll";
+    /* echo "<div style='text-align: center; padding-top: 50px;'>fasdfasdfasdfasdf</div>"; */
 
 } catch(PDOException $e) {
     echo $e->getMessage();
