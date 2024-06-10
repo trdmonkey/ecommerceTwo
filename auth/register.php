@@ -4,13 +4,31 @@
 
 if(isset($_POST['submit'])) {
     
+    if(empty($_POST['fullname']) or empty($_POST['mail']) or empty($_POST['username']) or empty($_POST['password'])) {
+        echo "<script>alert('Uno o mas campos estan vacíos!');</script>";
+    } else {
+
+        // echo "<script>alert('Buena mano!');</script>";
+        if($_POST['password'] == $_POST['confirm_password']) {
+            
+        }
+
+        $fullname = $_POST['fullname'];
+        $mail = $_POST['mail'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $image = "user.png";
+        $created_at = $_POST['created_at'];
+
+    }
+
 }
 
 ?>
 
     <div id="page-content" class="page-content">
         <div class="banner">
-            <div class="jumbotron jumbotron-bg text-center rounded-0" style="background-image: url('<?php echo APPURL; ?>/assets/img/bg-header.jpg');">
+            <div class="jumbotron jumbotron-bg text-left rounded-0" style="background-image: url('<?php echo APPURL; ?>/assets/img/bg-1.jpg');">
                 <div class="container">
                     <h1 class="pt-5">
                         Registrate
@@ -24,23 +42,23 @@ if(isset($_POST['submit'])) {
                             <form class="form-horizontal" action="index.html">
                                 <div class="form-group row mt-3">
                                     <div class="col-md-12">
-                                        <input class="form-control" type="text" required="" placeholder="Full Name">
+                                        <input class="form-control" type="text" required placeholder="Full Name">
                                     </div>
                                 </div>
                                 <div class="form-group row mt-3">
                                     <div class="col-md-12">
-                                        <input class="form-control" type="email" required="" placeholder="Email">
+                                        <input class="form-control" type="email" required placeholder="Email">
                                     </div>
                                 </div>
                                 
                                 <div class="form-group row mt-3">
                                     <div class="col-md-12">
-                                        <input class="form-control" type="text" required="" placeholder="Username">
+                                        <input class="form-control" type="text" required placeholder="Username">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <input class="form-control" type="password" required="" placeholder="Password">
+                                        <input class="form-control" type="password" required placeholder="Password">
                                     </div>
                                 </div>
                                 <div class="form-group row">

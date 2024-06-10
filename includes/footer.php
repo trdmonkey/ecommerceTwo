@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <p class="copyright">&copy; 2018 Freshcery | Groceries Organic Store. All rights reserved.</p>
+        <p class="copyright">&copy; 2024 <a href="https://jorge-luis.netlify.app/">trdmonkey</a> ⌂ Tienda de switches y pines ® Todos los derechos reservados.</p>
     </footer>
 
     <script type="text/javascript" src="<?php echo APPURL; ?>/assets/js/jquery.js"></script>

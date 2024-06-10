@@ -31,7 +31,7 @@ define("APPURL", "http://localhost/ecommerce");
             <div class="container">
                 <!-- Navbar Brand -->
                 <a href="index.html" class="navbar-brand">
-                    <img src="<?php echo APPURL; ?>/assets/img/logo/logo.png" alt="">
+                    <img src="<?php echo APPURL; ?>/assets/img/logo/logoSinFondo.png" alt="">
                 </a>
 
                 <!-- Toggle Button -->
