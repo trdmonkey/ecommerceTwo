@@ -2,26 +2,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h5>About</h5>
+                    <h5>Acerca de nosotros</h5>
                     <p>Nisi esse dolor irure dolor eiusmod ex deserunt proident cillum eu qui enim occaecat sunt aliqua anim eiusmod qui ut voluptate.</p>
                 </div>
                 <div class="col-md-3">
                     <h5>Links</h5>
                     <ul>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="about.html">Nosotros</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="contact.html">Contacto</a>
                         </li>
                         <li>
-                            <a href="faq.html">FAQ</a>
+                            <a href="faq.html">PQR</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">How it Works</a>
+                            <a href="javascript:void(0)">Servicios</a>
                         </li>
                         <li>
-                            <a href="terms.html">Terms</a>
+                            <a href="terms.html">Terminos y condiciones</a>
                         </li>
                         <li>
                             <a href="privacy.html">Privacy Policy</a>
@@ -29,17 +29,17 @@
                     </ul>
                 </div>
                 <div class="col-md-3">
-                     <h5>Contact</h5>
+                     <h5>Contactanos</h5>
                      <ul>
                          <li>
-                            <a href="tel:+620892738334"><i class="fa fa-phone"></i> 08272367238</a>
+                            <a href="tel:+620892738334"><i class="fa fa-phone"></i> 314 803 6634</a>
                         </li>
                         <li>
-                            <a href="mailto:hello@domain.com"><i class="fa fa-envelope"></i> hello@domain.com</a>
+                            <a href="mailto:hello@domain.com"><i class="fa fa-envelope"></i> tecnochapas@hotmail.com</a>
                          </li>
                      </ul>
 
-                     <h5>Follow Us</h5>
+                     <h5>Siguenos en</h5>
                      <ul class="social">
                          <li>
                             <a href="javascript:void(0)" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -53,7 +53,7 @@
                      </ul>
                 </div>
                 <div class="col-md-3">
-                     <h5>Get Our App</h5>
+                     <h5>Obtener nuestra app</h5>
                      <ul class="mb-0">
                          <li class="download-app">
                              <a href="#"><img src="<?php echo APPURL; ?>/assets/img/playstore.png"></a>

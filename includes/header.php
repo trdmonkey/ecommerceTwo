@@ -7,7 +7,7 @@ define("APPURL", "http://localhost/ecommerce");
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Freshcery | Groceries Organic Store</title>
+    <title>Tecnochapas El Paisa</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -43,13 +43,13 @@ define("APPURL", "http://localhost/ecommerce");
                     <!-- Navbar Menu -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="shop.html" class="nav-link">Shop</a>
+                            <a href="shop.html" class="nav-link">Compras</a>
                         </li>
                         <li class="nav-item">
-                            <a href="register.html" class="nav-link">Register</a>
+                            <a href="register.html" class="nav-link">Registro</a>
                         </li>
                         <li class="nav-item">
-                            <a href="login.html" class="nav-link">Login</a>
+                            <a href="login.html" class="nav-link">Entrar</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
