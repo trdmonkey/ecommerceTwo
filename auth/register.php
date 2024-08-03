@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
                 :mail,
                 :username,
                 :password,
-                :imagen
+                :image
             )");
 
             $insert->execute([
@@ -45,8 +45,15 @@ if (isset($_POST['submit'])) {
                 ":image" => $image
             ]);
 
-            header("Location:".APPURL."/login.php");
+            echo "<script> window.location.href='login.php'; </script>";
 
+            // header("Location: login.php");
+            // header("Location:".APPURL."/auth/login.php");
+?>
+            <!-- <script>
+                window.location.href = "<?php /* echo APPURL; */ ?>/auth/login.php";
+            </script> -->
+<?php
         } else {
             echo "<script>alert('Las contraseñas no coínciden, por favor escriba bien, pendejo!')</script>";
         }
@@ -71,12 +78,12 @@ if (isset($_POST['submit'])) {
                         <form class="form-horizontal" method="POST" action="register.php">
                             <div class="form-group row mt-3">
                                 <div class="col-md-12">
-                                    <input class="form-control" type="text" required placeholder="Full Name">
+                                    <input class="form-control" name="fullname" type="text" required placeholder="Full Name">
                                 </div>
                             </div>
                             <div class="form-group row mt-3">
                                 <div class="col-md-12">
-                                    <input class="form-control" name="fullname" type="email" required placeholder="Email">
+                                    <input class="form-control" name="email" type="email" required placeholder="Email">
                                 </div>
                             </div>
 
@@ -92,7 +99,7 @@ if (isset($_POST['submit'])) {
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <input class="form-control" type="confirm_password" required="" placeholder="Confirm Password">
+                                    <input class="form-control" name="confirm_password" type="password" required placeholder="Confirm Password">
                                 </div>
                             </div>
                             <div class="form-group row">

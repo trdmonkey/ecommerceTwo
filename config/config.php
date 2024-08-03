@@ -17,7 +17,7 @@ try {
     define("DBNAME", "ecommerce");
 
     // USER
-    define("USER", "adsi");
+    define("USER", "magnum");
 
     // PASS
     define("PASS", "utilizar");
