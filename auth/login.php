@@ -16,15 +16,15 @@
 
                     <div class="card card-login mb-5">
                         <div class="card-body">
-                            <form class="form-horizontal" action="index.html">
+                            <form class="form-horizontal" action="index.php">
                                 <div class="form-group row mt-3">
                                     <div class="col-md-12">
-                                        <input class="form-control" type="text" required="" placeholder="Usuario">
+                                        <input class="form-control" name="email" type="text" required="" placeholder="Correo Electronico">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <input class="form-control" type="password" required="" placeholder="Contraseña">
+                                        <input class="form-control" name="password" type="password" required="" placeholder="Contraseña">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -38,7 +38,7 @@
                                 </div>
                                 <div class="form-group row text-center mt-4">
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary btn-block text-uppercase">Entrar</button>
+                                        <button name="submit" type="submit" class="btn btn-primary btn-block text-uppercase">Entrar</button>
                                     </div>
                                 </div>
                             </form>
