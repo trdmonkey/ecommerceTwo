@@ -24,15 +24,13 @@ if (isset($_POST['submit'])) {
         if($login->rowCount() > 0) {
             echo $login->rowCount();
         } else {
-            
+
         }
 
     }
 }
 
-
 ?>
-
 
     <div id="page-content" class="page-content">
         <div class="banner">
