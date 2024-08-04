@@ -26,7 +26,11 @@ if (isset($_POST['submit'])) {
             // echo $login->rowCount();
             if(password_verify($password, $fetch['password'])) {
 
-                echo "LOGUEADO";
+                // echo "LOGUEADO";
+                $_SESSION['username'] = $fetch['password'];
+                $_SESSION['id'] = $fetch['id'];
+                $_SESSION['email'] = $fetch['email'];
+                $_SESSION['image'] = $fetch['image'];
 
             } else {
 
