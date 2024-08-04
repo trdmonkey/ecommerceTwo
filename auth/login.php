@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
         if($login->rowCount() > 0) {
             echo $login->rowCount();
         } else {
-
+            echo "<script>alert('Hay campos vacios!');</script>";
         }
 
     }
