@@ -3,6 +3,31 @@
     require "../config/config.php";    
 ?>
 
+<?php
+
+if (isset($_POST['submit'])) {
+
+    if (empty($_POST['email']) or empty($_POST['password'])) {
+        echo "<script>alert('Uno o mas campos estan vacíos!');</script>";
+    } else {
+
+        $email = POST['email'];
+        $password = POST['password'];
+
+        
+        /* QUERY */
+        $login = $conn->query("SELECT * FROM users WHERE email='$email'");
+        $login->execute();
+
+        $fetch = $login->fetch(PDO::FETCH_ASSOC);
+
+    }
+}
+
+
+?>
+
+
     <div id="page-content" class="page-content">
         <div class="banner">
             <div class="jumbotron jumbotron-bg text-center rounded-0" style="background-image: url('<?php echo APPURL; ?>/assets/img/bg-header.jpg');">
@@ -16,7 +41,7 @@
 
                     <div class="card card-login mb-5">
                         <div class="card-body">
-                            <form class="form-horizontal" action="index.php">
+                            <form class="form-horizontal" method="POST" action="login.php">
                                 <div class="form-group row mt-3">
                                     <div class="col-md-12">
                                         <input class="form-control" name="email" type="text" required="" placeholder="Correo Electronico">
