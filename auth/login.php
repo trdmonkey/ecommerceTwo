@@ -22,12 +22,24 @@ if (isset($_POST['submit'])) {
         $fetch = $login->fetch(PDO::FETCH_ASSOC);
 
         if($login->rowCount() > 0) {
-            echo $login->rowCount();
+
+            // echo $login->rowCount();
+            if(password_verify($password, $fetch['password'])) {
+
+                echo "LOGUEADO";
+
+            } else {
+
+                echo "<script>alert('Los campos de correo y/o contraseña son incorrectos!');</script>";
+
+            }
+
         } else {
-            echo "<script>alert('Hay campos vacios!');</script>";
+            echo "<script>alert('Correo electronico incorrecto!');</script>";
         }
 
     }
+    
 }
 
 ?>
