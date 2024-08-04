@@ -11,15 +11,21 @@ if (isset($_POST['submit'])) {
         echo "<script>alert('Uno o mas campos estan vacíos!');</script>";
     } else {
 
-        $email = POST['email'];
-        $password = POST['password'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
 
         
         /* QUERY */
-        $login = $conn->query("SELECT * FROM users WHERE email='$email'");
+        $login = $conn->query("SELECT * FROM users WHERE mail='$email'");
         $login->execute();
 
         $fetch = $login->fetch(PDO::FETCH_ASSOC);
+
+        if($login->rowCount() > 0) {
+            echo $login->rowCount();
+        } else {
+            
+        }
 
     }
 }
