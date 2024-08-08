@@ -29,9 +29,11 @@ if (isset($_POST['submit'])) {
                 // echo "LOGUEADO";
                 $_SESSION['username'] = $fetch['password'];
                 $_SESSION['id'] = $fetch['id'];
-                $_SESSION['email'] = $fetch['email'];
+                $_SESSION['email'] = $fetch['mail'];
                 $_SESSION['image'] = $fetch['image'];
 
+                echo "<script> window.location.href='".APPURL."'; </script>";
+                
             } else {
 
                 echo "<script>alert('Los campos de correo y/o contraseña son incorrectos!');</script>";
@@ -50,7 +52,7 @@ if (isset($_POST['submit'])) {
 
     <div id="page-content" class="page-content">
         <div class="banner">
-            <div class="jumbotron jumbotron-bg text-center rounded-0" style="background-image: url('<?php echo APPURL; ?>/assets/img/bg-header.jpg');">
+            <div class="jumbotron jumbotron-bg text-center rounded-0" style="background-image: url('<?php echo APPURL; ?>/assets/img/bg-headerTwo.webp');">
                 <div class="container">
                     <h1 class="pt-5">
                         Inicio de sesión
