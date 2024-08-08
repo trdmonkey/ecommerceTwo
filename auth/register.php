@@ -25,13 +25,13 @@ if (isset($_POST['submit'])) {
             /* $insert = "insert into users(fullname, mail, username, password, image, created_at) values('astrid','astrid@mail.com','astrid','astrid','','') "; */
             $insert = $conn->prepare("INSERT INTO users(
                 fullname, 
-                mail, 
+                email, 
                 username, 
                 password, 
                 image
             ) VALUES(
                 :fullname,
-                :mail,
+                :email,
                 :username,
                 :password,
                 :image
@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
 
             $insert->execute([
                 ":fullname" => $fullname,
-                ":mail" => $mail,
+                ":email" => $mail,
                 ":username" => $username,
                 ":password" => password_hash($password, PASSWORD_BCRYPT),
                 ":image" => $image

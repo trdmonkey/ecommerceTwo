@@ -16,10 +16,11 @@ if (isset($_POST['submit'])) {
 
         
         /* QUERY */
-        $login = $conn->query("SELECT * FROM users WHERE mail='$email'");
+        $login = $conn->query("SELECT * FROM users WHERE email='$email'");
         $login->execute();
 
         $fetch = $login->fetch(PDO::FETCH_ASSOC);
+        // var_dump($fetch);
 
         if($login->rowCount() > 0) {
 
@@ -27,9 +28,11 @@ if (isset($_POST['submit'])) {
             if(password_verify($password, $fetch['password'])) {
 
                 // echo "LOGUEADO";
-                $_SESSION['username'] = $fetch['password'];
+                $_SESSION['username'] = $fetch['username'];
+                $_SESSION['fullname'] = $fetch['fullname'];
+                $_SESSION['password'] = $fetch['password'];
                 $_SESSION['id'] = $fetch['id'];
-                $_SESSION['email'] = $fetch['mail'];
+                $_SESSION['email'] = $fetch['email'];
                 $_SESSION['image'] = $fetch['image'];
 
                 echo "<script> window.location.href='".APPURL."'; </script>";

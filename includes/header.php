@@ -32,7 +32,7 @@ define("APPURL", "http://localhost/ecommerce");
             <div class="container">
                 <!-- Navbar Brand -->
                 <a href="index.html" class="navbar-brand">
-                    <img src="<?php echo APPURL; ?>/assets/img/logo/logoSinFondo.png" alt="">
+                    <img src="#" alt="">
                 </a>
 
                 <!-- Toggle Button -->
@@ -46,27 +46,34 @@ define("APPURL", "http://localhost/ecommerce");
                         <li class="nav-item">
                             <a href="shop.html" class="nav-link">Compras</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="register.html" class="nav-link">Registro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="login.html" class="nav-link">Entrar</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <div class="avatar-header"><img src="<?php echo APPURL; ?>/assets/img/logo/avatar.jpg"></div> Jorge Luis
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="transaction.html">Transactions History</a>
-                                <a class="dropdown-item" href="setting.html">Settings</a>
-                            </div>
-                          </li>
-                        <li class="nav-item">
-                            <a href="cart.html" class="nav-link" data-toggle="" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-shopping-basket"></i> <span class="badge badge-primary">5</span>
-                            </a>
-                          
-                        </li>
+
+                        <?php if(!$_SESSION['username']) : ?>
+
+                            <li class="nav-item">
+                                <a href="register.html" class="nav-link">Registro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link">Entrar</a>
+                            </li>
+
+                        <?php else : ?>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="avatar-header"><img src="<?php echo APPURL; ?>/assets/img/logo/avatar.jpg"></div> <?php echo ucwords($_SESSION['fullname']); ?>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="transaction.html">Transactions History</a>
+                                    <a class="dropdown-item" href="setting.html">Settings</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cart.html" class="nav-link" data-toggle="" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-shopping-basket"></i> <span class="badge badge-primary">5</span>
+                                </a>
+                            
+                            </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
 
