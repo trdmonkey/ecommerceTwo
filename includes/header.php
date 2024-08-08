@@ -32,7 +32,7 @@ define("APPURL", "http://localhost/ecommerce");
             <div class="container">
                 <!-- Navbar Brand -->
                 <a href="index.html" class="navbar-brand">
-                    <img src="#" alt="">
+                    <img src="<?php echo APPURL; ?>/assets/img/logo/logoSinFondo.png" alt="">
                 </a>
 
                 <!-- Toggle Button -->
@@ -50,13 +50,13 @@ define("APPURL", "http://localhost/ecommerce");
                             <a href="faq.html" class="nav-link">FAQ</a>
                         </li>
 
-                        <?php if(!$_SESSION['username']) : ?>
+                        <?php if(!isset($_SESSION['username'])) : ?>
 
                             <li class="nav-item">
-                                <a href="register.html" class="nav-link">Registro</a>
+                                <a href="<?php echo APPURL; ?>/auth/register.php" class="nav-link">Registro</a>
                             </li>
                             <li class="nav-item">
-                                <a href="login.html" class="nav-link">Entrar</a>
+                                <a href="<?php echo APPURL; ?>/auth/login.php" class="nav-link">Ingresar</a>
                             </li>
 
                         <?php else : ?>

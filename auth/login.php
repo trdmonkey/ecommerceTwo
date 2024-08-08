@@ -5,6 +5,11 @@
 
 <?php
 
+if(isset($_SESSION['username'])) {
+    echo "<script> window.location.href='".APPURL."'; </script>";
+}
+
+
 if (isset($_POST['submit'])) {
 
     if (empty($_POST['email']) or empty($_POST['password'])) {
