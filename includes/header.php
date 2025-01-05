@@ -67,7 +67,7 @@ define("APPURL", "http://localhost/ecommerce");
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="<?php echo APPURL; ?>/transaction.php">Transacciones</a>
-                                    <a class="dropdown-item" href="setting.html">Configuración</a>
+                                    <a class="dropdown-item" href="<?php echo APPURL; ?>/setting.php">Configuración</a>
                                     <a class="dropdown-item" href="<?php echo APPURL; ?>/auth/logout.php">Salir</a>
                                 </div>
                             </li>
