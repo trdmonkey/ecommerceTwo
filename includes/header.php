@@ -66,7 +66,7 @@ define("APPURL", "http://localhost/ecommerce");
                                     <div class="avatar-header"><img src="<?php echo APPURL; ?>/assets/img/logo/avatar.jpg"></div> <?php echo ucwords($_SESSION['fullname']); ?>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="transaction.html">Transacciones</a>
+                                    <a class="dropdown-item" href="<?php echo APPURL; ?>/transaction.php">Transacciones</a>
                                     <a class="dropdown-item" href="setting.html">Configuración</a>
                                     <a class="dropdown-item" href="<?php echo APPURL; ?>/auth/logout.php">Salir</a>
                                 </div>
