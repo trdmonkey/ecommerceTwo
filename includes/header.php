@@ -47,7 +47,7 @@ define("APPURL", "http://localhost/ecommerce");
                             <a href="<?php echo APPURL;?>/shop.php" class="nav-link">Compras</a>
                         </li>
                         <li class="nav-item">
-                            <a href="faq.html" class="nav-link">FAQ</a>
+                            <a href="<?php echo APPURL;?>/faq.php" class="nav-link">FAQ</a>
                         </li>
 
                         <?php if(!isset($_SESSION['username'])) : ?>
