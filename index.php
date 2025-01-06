@@ -140,7 +140,7 @@
                     </div>
 
                     <div class="col-md-12 mt-5 text-center">
-                        <a href="shop.html" class="btn btn-primary btn-lg">COMPRAR AHORA</a>
+                        <a href="shop.php" class="btn btn-primary btn-lg">COMPRAR AHORA</a>
                     </div>
                 </div>
             </div>
