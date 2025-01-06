@@ -32,7 +32,7 @@ define("APPURL", "http://localhost/ecommerce");
             <div class="container">
                 <!-- Navbar Brand -->
                 <a href="index.html" class="navbar-brand">
-                    <img src="<?php echo APPURL; ?>/assets/img/logo/logoSinFondo.png" alt="">
+                    <img src="<?php echo APPURL; ?>/assets/img/logo/logoSinFondo.png" alt="IMAGEN">
                 </a>
 
                 <!-- Toggle Button -->
@@ -66,7 +66,7 @@ define("APPURL", "http://localhost/ecommerce");
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <div class="avatar-header"><img src="<?php echo APPURL; ?>/assets/img/logo/avatar.jpg"></div> <?php echo ucwords($_SESSION['fullname']); ?>
+                                    <div class="avatar-header"><img src="<?php echo APPURL; ?>/assets/img/logo/<?php echo $_SESSION['image']; ?>"></div> <?php echo ucwords($_SESSION['fullname']); ?>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="<?php echo APPURL; ?>/transaction.php">Transacciones</a>
