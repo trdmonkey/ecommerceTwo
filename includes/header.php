@@ -46,6 +46,7 @@ define("APPURL", "http://localhost/ecommerce");
             h1 {
                 font-size: 2.5rem; /* Tamaño para pantallas medianas y más grandes */
                 text-align: left; /* Alineación izquierda en pantallas grandes */
+                letter-spacing: 2px;
             }
         }
 
