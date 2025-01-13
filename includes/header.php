@@ -23,6 +23,42 @@ define("APPURL", "http://localhost/ecommerce");
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo APPURL; ?>/assets/packages/thumbelina/thumbelina.css">
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo APPURL; ?>/assets/packages/bootstrap-touchspin/bootstrap-touchspin.css">
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo APPURL; ?>/assets/css/theme.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-size: 2rem; /* Tamaño predeterminado */
+            font-family: "Permanent Marker", serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center; /* Centrado para todas las pantallas */
+            background: linear-gradient(90deg, #ff6600, #ff9900, #e66b0b, #ffc500, #ff6600); /* Gradiente animado */
+            background-size: 300%; /* Aumenta el tamaño del gradiente para el efecto */
+            -webkit-background-clip: text; /* El fondo solo se aplica al texto */
+            -webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el fondo */
+            animation: gradientMove 5s linear infinite; /* Animación del gradiente */
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.5rem; /* Tamaño para pantallas medianas y más grandes */
+                text-align: left; /* Alineación izquierda en pantallas grandes */
+            }
+        }
+
+        /* Animación del gradiente */
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%; /* Inicio del gradiente */
+            }
+            100% {
+                background-position: 100% 50%; /* Final del gradiente */
+            }
+        }
+    </style>
 
 </head>
 <body>

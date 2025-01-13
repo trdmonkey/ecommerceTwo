@@ -7,10 +7,10 @@
                     <!-- <source src='assets/media/explore.webm' type='video/webm' /> -->
                 </video>
                 <div class="container">
-                    <h1 class="pt-5">
-                        Tecnochapas<br>
-                        El Paisa.
-                    </h1>
+                <h1 class="pt-5 text-center text-md-start fs-3 fs-md-1">
+                    Tecnochapas<br>
+                    El Paisa
+                </h1>
                     <p class="lead">
                         Un mundo de repuestos y accesorios para su vehiculo.
                     </p>
@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                        Importaciones
+                                        Importacion
                                     </h4>
                                     <p class="card-text">
                                         "Traemos lo que necesitas, directo desde las mejores marcas del mundo."
