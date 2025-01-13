@@ -12,7 +12,7 @@
                     El Paisa
                 </h1>
                     <p class="lead">
-                        Un mundo de repuestos y accesorios para su vehiculo.
+                        Un mundo de repuestos y accesorios para su vehiculo
                     </p>
 
                     <div class="row">
