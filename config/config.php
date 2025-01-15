@@ -1,11 +1,11 @@
 <?php
 
-if(!isset($_SERVER['HTTP_REFERER'])) {
+/* if(!isset($_SERVER['HTTP_REFERER'])) {
     // Vamos a redirigir a la ubicacion deseada
     // header('location: ../index.php');
     header('location: http://localhost/ecommerce/index.php');
     exit;
-}
+} */
 
 
 try {
