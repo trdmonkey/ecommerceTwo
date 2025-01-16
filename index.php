@@ -162,7 +162,7 @@
         <section id="categories" class="pb-0 gray-bg">
             <h2 class="title">Categorias</h2>
             <div class="landing-categories owl-carousel">
-                <?php foreach($allCategories as $category) : ?>
+            <?php foreach($allCategories as $category) : ?>
                 <div class="item">
                     <div class="card rounded-0 border-0 text-center">
                         <img src="assets/img/<?php echo $category->image; ?>">
